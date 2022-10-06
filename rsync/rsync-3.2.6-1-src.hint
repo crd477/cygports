@@ -1,5 +1,5 @@
 category: Net
-build-depends: cygport libssl-devel libxxhash-devel libzstd-devel liblz4-devel
+build-depends: cygport libiconv-devel libssl-devel libxxhash-devel libzstd-devel liblz4-devel
 sdesc: "Fast incremental file transfer program"
 ldesc: "Rsync is a fast and extraordinarily versatile file copying
 tool. It can copy locally, to/from another host over any remote shell,

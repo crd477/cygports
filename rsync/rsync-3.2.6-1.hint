@@ -1,5 +1,5 @@
 category: Net
-requires: bash cygwin liblz4_1 libssl1.1 libxxhash0 libzstd1 libssl1.1 libxxhash0 libzstd1 liblz4_1
+requires: bash cygwin libiconv2 liblz4_1 libssl1.1 libxxhash0 libzstd1 libiconv2 libssl1.1 libxxhash0 libzstd1 liblz4_1
 sdesc: "Fast incremental file transfer program"
 ldesc: "Rsync is a fast and extraordinarily versatile file copying
 tool. It can copy locally, to/from another host over any remote shell,
