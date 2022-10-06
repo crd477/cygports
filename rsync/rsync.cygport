@@ -26,12 +26,6 @@ LICENSE=GPLv3+
 LICENSE_SPDX="SPDX-License-Identifier: GPL-3.0-or-later"
 LICENSE_URI=COPYING
 
-#MAKEOPTS+=" defexec_DATA= "
-
-#BUILD_REQUIRES="libassuan-devel libbz2-devel libgcrypt-devel libgnutls-devel libgpg-error-devel libiconv-devel libintl-devel libksba-devel libnpth-devel openldap-devel libreadline-devel libsqlite3-devel libusb1.0-devel gettext-devel zlib-devel pinentry"
-#REQUIRES="pinentry"
-#DIFF_EXCLUDES="VERSION"
-
 BUILD_REQUIRES="libssl-devel libxxhash-devel libzstd-devel liblz4-devel"
 REQUIRES="libssl1.1 libxxhash0 libzstd1 liblz4_1"
 DIFF_EXCLUDES="testsuite"
