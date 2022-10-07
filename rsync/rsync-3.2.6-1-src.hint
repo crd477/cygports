@@ -19,4 +19,4 @@ quick check indicates that the file's data does not need to be updated."
 skip:
 test:
 homepage: https://rsync.samba.org/
-license: GPLv3+
+license: GPL-3.0-or-later
