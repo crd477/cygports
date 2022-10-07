@@ -22,7 +22,7 @@ HOMEPAGE="https://rsync.samba.org/"
 SRC_URI="https://download.samba.org/pub/rsync/src/rsync-3.2.6.tar.gz
 https://download.samba.org/pub/rsync/src/rsync-3.2.6.tar.gz.asc"
 SRC_DIR="rsync-${VERSION}"
-LICENSE=GPLv3+
+LICENSE=GPL-3.0-or-later
 LICENSE_SPDX="SPDX-License-Identifier: GPL-3.0-or-later"
 LICENSE_URI=COPYING
 
