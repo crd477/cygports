@@ -17,8 +17,7 @@ packaged in other distributions:
 
 It is released under the ISC license.
 
-The current release can be downloaded from:
-
+The current release can be downloaded from:<br>
 https://github.com/jedisct1/minisign/releases/tag/0.10
 
 It can be compiled on Cygwin without patches.
@@ -26,5 +25,5 @@ It can be compiled on Cygwin without patches.
 The minisign author does supply a native Windows port but I believe it
 is useful to have available in Cygwin as well.
 
-.hint and .cygport files can be found in this repository along with
+`.hint` and `.cygport` files can be found in this repository along with
 built packages.
