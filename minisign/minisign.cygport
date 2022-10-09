@@ -16,16 +16,10 @@ LICENSE_SPDX="SPDX-License-Identifier: ISC"
 LICENSE_URI=LICENSE
 
 BUILD_REQUIRES="cmake libsodium-devel pkg-config"
-REQUIRES="libsodium23"
 
-# Enable this function for releases that work without autoreconf
 src_compile()
 {
   cd $B
   cygcmake
   cygmake
-}
-src_install() {
-  cd ${B}
-  cyginstall
 }

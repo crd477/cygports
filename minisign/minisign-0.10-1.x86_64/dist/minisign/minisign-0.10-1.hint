@@ -1,5 +1,5 @@
 category: Security
-requires: cygwin libsodium23 libsodium23
+requires: cygwin libsodium23 
 sdesc: "Simple tool to sign files and verify signatures"
 ldesc: "Minisign is a dead simple tool to sign files and verify signatures.
 
