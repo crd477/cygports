@@ -21,19 +21,28 @@ quick check indicates that the file's data does not need to be updated."
 HOMEPAGE="https://rsync.samba.org/"
 SRC_URI="https://download.samba.org/pub/rsync/src/rsync-3.2.6.tar.gz
 https://download.samba.org/pub/rsync/src/rsync-3.2.6.tar.gz.asc"
-SRC_DIR="rsync-${VERSION}"
 LICENSE=GPL-3.0-or-later
 LICENSE_SPDX="SPDX-License-Identifier: GPL-3.0-or-later"
 LICENSE_URI=COPYING
-
+PATCH_URI="rsync-README.patch"
 BUILD_REQUIRES="libiconv-devel libssl-devel libxxhash-devel libzstd-devel liblz4-devel"
-REQUIRES="libiconv2 libssl1.1 libxxhash0 libzstd1 liblz4_1"
 DIFF_EXCLUDES="testsuite"
 
-# Enable this function for releases that work without autoreconf
+# rsync release tarball does not work with autoreconf
 src_compile()
 {
-  cd $B
+  cd ${B}
   cygconf
   cygmake
+}
+
+src_install() {
+  cd ${B}
+  cyginstall
+  cd ${S}
+  dodoc csprotocol.txt daemon-parm.txt INSTALL.md
+  dodoc rsync-ssl.1.html rsync.1.html rsync3.txt rsyncd.conf.5.html
+  dodoc rsyncsh.txt SECURITY.md
+  docinto /Cygwin
+  dodoc rsync.README
 }
