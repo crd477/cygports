@@ -4,4 +4,4 @@ external-source: rsync
 sdesc: "Debug info for rsync"
 ldesc: "This package contains files necessary for debugging the
 rsync package with gdb."
-test:
+

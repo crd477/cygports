@@ -17,6 +17,6 @@ in last-modified time. Any changes in the other preserved attributes (as
 requested by options) are made on the destination file directly when the
 quick check indicates that the file's data does not need to be updated."
 skip:
-test:
+
 homepage: https://rsync.samba.org/
 license: GPL-3.0-or-later
