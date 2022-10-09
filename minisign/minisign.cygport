@@ -17,9 +17,4 @@ LICENSE_URI=LICENSE
 
 BUILD_REQUIRES="cmake libsodium-devel pkg-config"
 
-src_compile()
-{
-  cd $B
-  cygcmake
-  cygmake
-}
+CYGCMAKE_GENERATOR="Unix Makefiles"
