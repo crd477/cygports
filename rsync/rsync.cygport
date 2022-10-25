@@ -1,5 +1,5 @@
 NAME="rsync"
-VERSION=3.2.6
+VERSION=3.2.7
 RELEASE=1
 CATEGORY="Net"
 SUMMARY="Fast incremental file transfer program"
@@ -19,12 +19,11 @@ in last-modified time. Any changes in the other preserved attributes (as
 requested by options) are made on the destination file directly when the
 quick check indicates that the file's data does not need to be updated."
 HOMEPAGE="https://rsync.samba.org/"
-SRC_URI="https://download.samba.org/pub/rsync/src/rsync-3.2.6.tar.gz
-https://download.samba.org/pub/rsync/src/rsync-3.2.6.tar.gz.asc"
+SRC_URI="https://download.samba.org/pub/rsync/src/rsync-3.2.7.tar.gz
+https://download.samba.org/pub/rsync/src/rsync-3.2.7.tar.gz.asc"
 LICENSE=GPL-3.0-or-later
 LICENSE_SPDX="SPDX-License-Identifier: GPL-3.0-or-later"
 LICENSE_URI=COPYING
-PATCH_URI="rsync-README.patch"
 BUILD_REQUIRES="libiconv-devel libssl-devel libxxhash-devel libzstd-devel liblz4-devel"
 DIFF_EXCLUDES="testsuite"
 
@@ -40,9 +39,9 @@ src_install() {
   cd ${B}
   cyginstall
   cd ${S}
-  dodoc csprotocol.txt daemon-parm.txt INSTALL.md
-  dodoc rsync-ssl.1.html rsync.1.html rsync3.txt rsyncd.conf.5.html
-  dodoc rsyncsh.txt SECURITY.md
+  dodoc csprotocol.txt daemon-parm.txt INSTALL.md \
+        rsync-ssl.1.html rsync.1.html rsyncd.conf.5.html \
+        rsync3.txt rsyncsh.txt SECURITY.md
   docinto /Cygwin
   dodoc rsync.README
 }
