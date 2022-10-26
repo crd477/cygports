@@ -20,16 +20,18 @@ requested by options) are made on the destination file directly when the
 quick check indicates that the file's data does not need to be updated."
 HOMEPAGE="https://rsync.samba.org/"
 SRC_URI="https://download.samba.org/pub/rsync/src/rsync-3.2.7.tar.gz
-https://download.samba.org/pub/rsync/src/rsync-3.2.7.tar.gz.asc"
+https://download.samba.org/pub/rsync/src/rsync-3.2.7.tar.gz.asc
+rsync.README"
 LICENSE=GPL-3.0-or-later
 LICENSE_SPDX="SPDX-License-Identifier: GPL-3.0-or-later"
 LICENSE_URI=COPYING
 BUILD_REQUIRES="libiconv-devel libssl-devel libxxhash-devel libzstd-devel liblz4-devel"
 DIFF_EXCLUDES="testsuite"
 
-# rsync release tarball does not work with autoreconf
-src_compile()
-{
+src_compile() {
+  lndirs
+  cd ${S}
+  cygautoreconf
   cd ${B}
   cygconf
   cygmake
